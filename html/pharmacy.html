@@ -1,0 +1,135 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <link rel="stylesheet" href="../styles/phstyles.css">
+    <title>Online Pharmacy</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+    <div class="navbar">
+        <i class='bx bx-menu'></i>
+        <img class="logo" src="../images/1.png" width="120px" height="120px" alt="RoyalCare Logo Image">
+        <div class="logo"><a href="#">ApexCare Medical Center</a></div>
+        <div class="nav-links">
+            <div class="sidebar-logo">
+                <span class="logo-name">ApexCare Medical Center</span>
+                <i class='bx bx-x'></i>
+            </div>
+            <ul class="links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="Contact Us.html">Contact Us</a></li>
+                <li><a href="about us.html">About Us</a></li>
+                <li><a href="help.html">Help</a></li>
+                <li>
+                    <a href="#">More</a>
+                    <i class='bx bxs-chevron-down htmlcss-arrow arrow'></i>
+                    <ul class="htmlCss-sub-menu sub-menu">
+                        <li><a href="rej.html">Registration</a></li>
+                        <li><a href="user.html">User Account</a></li>
+                        <li><a href="service page.html">Services</a></li>
+                        <li><a href="pharmacy.html">Online Pharmacy</a></li>
+                        <li class="more">
+                            <a href="billing.html">Billing</a>
+                            <li><a href="pay.html">Payment</a></li>
+                            <i class='bx bxs-chevron-right arrow more-arrow'></i>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+      
+    </div>
+</nav>
+
+    
+    <div class="upload-txt uploadborder">
+        <h1>GET YOUR MEDICINE DELIVERED TO YOUR DOORSTEP !!</h1>
+        <br>
+        <h2>Upload your prescription here -></h2>
+        <br><br>
+        <input type="file" id="file" accept="image/*">
+        <label for="file">
+            <i class="material-icons">add_photo_alternate</i>
+            Choose a photo
+        </label>
+        <br><br>
+        <img id="preview" src="" alt="Prescription Preview" style="display:none; max-width: 100%; height: auto;">
+        <br><br>
+        <button id="submitBtn" style="display:none;">Submit</button>
+        <p id="successMessage" style="display:none; color:green;">Prescription uploaded successfully!</p>
+        <p>We already have your location from your user account info so do not worry about delivery. Stay home. Stay safe. We will take care of everything.</p>
+        <br><p>Delivery charges may apply*</p><a href="feedback.html" id="feedbackLink">Give Feedback</a>
+    </div>
+    <img src="../images/ph.jpeg" width="1550px" height="1000px" alt="medi image"><br>
+    
+<!-- ---------------------------footer -------------------------------->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Quick access</h4>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Our services</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support us</h4>
+                    <ul>
+                        <li><a href="#">Donate</a></li>
+                        <li><a href="#">How to help?</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const fileInput = document.getElementById('file');
+        const previewImage = document.getElementById('preview');
+        const submitBtn = document.getElementById('submitBtn');
+        const successMessage = document.getElementById('successMessage');
+
+        fileInput.addEventListener('change', function() {
+            const file = this.files[0];
+            if (file) {
+                const reader = new FileReader();
+                previewImage.style.display = "block";
+                submitBtn.style.display = "block";
+
+                reader.addEventListener('load', function() {
+                    previewImage.setAttribute('src', this.result);
+                });
+
+                reader.readAsDataURL(file);
+            } else {
+                previewImage.style.display = "none";
+                previewImage.setAttribute('src', '');
+                submitBtn.style.display = "none";
+                successMessage.style.display = "none";
+            }
+        });
+
+        submitBtn.addEventListener('click', function() {
+            successMessage.style.display = "block";
+            // Here you can add code to actually upload the file if needed.
+        });
+    </script>
+
+</body>
+</html>

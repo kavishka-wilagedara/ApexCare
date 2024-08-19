@@ -1,0 +1,98 @@
+<!DOCTYPE html> 
+<html>
+ <head>
+    <link rel="stylesheet" href="../styles/Payment.css">
+    <title>Confirm Your Payment</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="../js/pay.js"></script> <!-- Link to the JS file -->
+ </head>
+ <body>
+	<nav>
+    <div class="navbar">
+      <i class='bx bx-menu'></i>
+      <img class="logo" src="../images/1.png" width="120px" height="120px" alt="ApexCare Logo Image">
+    
+      <div class="logo"><a href="#">ApexCare Medical Center</a></div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <span class="logo-name">ApexCare Medical Center</span>
+          <i class='bx bx-x'></i>
+        </div>
+        <ul class="links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="Contact Us.html">Contact Us</a></li>
+          <li><a href="about us.html">About Us</a></li>
+          <li><a href="help.html">Help</a></li>
+          <li>
+            <a href="#">More</a>
+            <i class='bx bxs-chevron-down htmlcss-arrow arrow'></i>
+            <ul class="htmlCss-sub-menu sub-menu">
+              <li><a href="rej.html">Registration</a></li>
+              <li><a href="user.html">Our Staff</a></li> 
+              <li><a href="service page.html">Services</a></li>
+              <li><a href="pharmacy.html">Online Pharmacy</a></li>
+              <li class="more">
+                <a href="billing.html">Billing</a>
+                <li><a href="pay.html">Payment</a></li>
+                <i class='bx bxs-chevron-right arrow more-arrow'></i>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="search-box">
+        <i class='bx bx-search'></i>
+        <div class="input-box">
+          <input type="text" placeholder="Search...">
+        </div>
+      </div>
+    </div>
+  </nav>
+  <br><br>
+  <div class="Payment-form">
+    <h1>Payment Form</h1>
+    <form action="../php/pay.php" method="post" onsubmit="return validateForm()">
+      <p>Account Name :</p>
+      <input type="text" name="AccountName" placeholder="Account Name" required>
+      <p>Card Number :</p>
+      <input type="text" name="CardNumber" placeholder="Card Number" required>
+      <p>CVV:</p>
+      <input type="text" name="Cvv" placeholder="CVV" required>
+      <p>Expiry Date:</p>
+      <input type="text" name="Expiary" placeholder="MM/YY" required>
+      <button type="submit">CONFIRM</button>
+    </form>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>Quick access</h4>
+          <ul>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">our services</a></li>
+            <li><a href="#">contact us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Support us</h4>
+          <ul>
+            <li><a href="#">Donate</a></li>
+            <li><a href="#">How to help?</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+ </body>
+</html>

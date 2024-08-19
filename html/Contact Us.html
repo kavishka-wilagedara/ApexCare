@@ -1,0 +1,154 @@
+<!DOCTYPE html> 
+<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+    <link rel="stylesheet" href="../styles/styles4.css">
+    <!--add a title(a)-->
+    <title>ApexCare Medical Center</title>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+meta http-equiv="Content-Type"content="text/html; charset=utf-8"/>
+		<meta name="viewport"content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Contact</title>
+		<link href="../styles/styles4.css"rel="stylesheet"type="text/css"/>
+		
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+     <script src="../js/contacyus.js"></script> <!-- Link to the JS file -->
+  </head>
+ <body>
+
+		<nav>
+    <div class="navbar">
+      <i class='bx bx-menu'></i>
+      <img class ="logo" src="../images/1.png"  width= "120px" height="120px" alt="RoyalCare Logo Image">
+    
+      <div class="logo"><a href="#">ApexCare Medical Center</a></div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <span class="logo-name">ApexCare Medical Center</span>
+          <i class='bx bx-x' ></i>
+        </div>
+        <ul class="links">
+			<li><a href="home.html">Home</a></li>
+			<li><a href="login.html">Login</a></li>
+			<li><a href="Contact Us.html">Contact Us</a></li>
+			<li><a href="about us.html">About Us</a></li>
+			<li><a href="help.html">Help</a></li>
+							 
+			<li>
+			  <a href="#">More</a>
+			  <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+			  <ul class="htmlCss-sub-menu sub-menu">
+				<li><a href="rej.html">Registration</a></li>
+				<li><a href="user.html">User Account</a></li> 
+				<li><a href="service page.html">Services</a></li>
+				<li><a href="pharmacy.html">Online Pharmacy</a></li>
+				<li class="more">
+				  <a href="billing.html">Billing</a>
+					<li><a href="pay.html">Payment</a></li>
+				  <i class='bx bxs-chevron-right arrow more-arrow'></i>                         
+                </ul>
+              </li>
+            </ul>
+           </li>
+      </div>
+    </div>
+  </nav>
+  
+
+</center>
+<div class="contact-wrap">
+    <div class="contact-in">
+        <h1>Contact Info and Details</h1>
+        <h2><i class="fa fa-phone" aria-hidden="true"></i> Phone</h2>
+        <p>Hot Line - +0115298632</p>
+        <h2><i class="fa fa-envelope" aria-hidden="true"></i> Email</h2>
+        <p>Apexcare@gmail.com</p>
+        <h2><i class="fa fa-map-marker" aria-hidden="true"></i> Address</h2>
+        <p>No:89/A, Kandy Road, Kiribathgoda</p>
+        <ul>
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        </ul>
+    </div>
+    <div class="contact-in">
+        <h1>Book an Appointment</h1>
+        <form action="../php/contact us.php" method="post">
+            <!-- Full Name Field -->
+            <input type="text" name="fullname" placeholder="Full Name" class="contact-in-input" required>
+            
+            <!-- Email Address Field -->
+            <input type="email" name="email" placeholder="Email Address" class="contact-in-input" required>
+            
+            <!-- Address Field -->
+            <input type="text" name="address" placeholder="Enter Resident Address" class="contact-in-input" required>
+            
+            <!-- Select Doctor Dropdown -->
+            <select name="doctor" class="contact-in-input" required>
+                <option value="" disabled selected>Select Doctor</option>
+                <option value="Dr. Krishan Gamage">Dr. Krishan Gamage - Dental Services</option>
+                <option value="Dr. Nalin Kulathunga">Dr. Nalin Kulathunga - Children Care</option>
+                <option value="Dr. Naduni Hewage">Dr. Naduni Hewage - All Lab Services</option>
+                <option value="Dr. Kasun Wijesinhaghe">Dr. Kasun Wijesinhaghe - Surgery</option>
+                <option value="Dr. Helani Kishara">Dr. Helani Kishara - Physiotherapy</option>
+                <option value="Dr. Damith Punchihewa">Dr. Damith Punchihewa - Cardiology</option>
+                <option value="Dr. Sonali Karunarathna">Dr. Sonali Karunarathna - Nutrition and Dietetics</option>
+            </select>
+            
+            <!-- Preferred Date Field -->
+            <input type="date" name="appointment_date" class="contact-in-input" required>
+            
+            <!-- Preferred Time Field -->
+            <input type="time" name="appointment_time" class="contact-in-input" required>
+            
+            <!-- Reason for Visit Field -->
+            <textarea name="reason" placeholder="Reason for Visit" class="contact-in-input" rows="4" required></textarea>
+            
+            <!-- Submit Button -->
+            <input type="submit" value="Book Appointment" class="contact-in-btn">
+        </form>
+    </div>
+</div>
+<script src="../js/contact.js"></script> 
+    
+<footer class= "footer">
+ <div class = "container">
+   <div class ="row">
+    <div class="footer-col">
+  	 			<h4>Quick access</h4>
+  	 			<ul>
+  	 				<li><a href="#">about us</a></li>
+  	 				<li><a href="#">our services</a></li>
+  	 				<li><a href="#">contact us</a></li>
+  	 				
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>Support us</h4>
+  	 			<ul>
+  	 				<li><a href="#">Donate</a></li>
+  	 				<li><a href="#">How to help?</a></li>
+  	 				
+  	 			</ul>
+  	 		</div>
+                <div class="footer-col">
+  	 			<h4>Follow us</h4>
+                        <div class= "social-links">
+  	 				<a href="#"><i class="fab fa-facebook-f"></i></a>
+  	 				<a href="#"><i class="fab fa-twitter"></i></a>
+                              <a href="#"><i class="fab fa-instagram"></i></a>
+                              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+  	 				
+  	 			</ul>
+  	 		</div>
+
+</div>
+</div>
+</div>
+</footer>
+
+
+ </body>
+
+</html>
